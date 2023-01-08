@@ -5,8 +5,8 @@ const router = express.Router();
 // @desc Get logged in user
 // @access Private
 
-router.post('/', (res, req) =>{
-    res.send('Register a user');
+router.get('/', (res, req) =>{
+    res.send('Get logged in user');
 });
 
 module.exports = router;
