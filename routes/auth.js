@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// @routes GET api/authf
-// @desc Register a user
-// @access Public
+// @routes GET api/auth
+// @desc 
+// @access Private
 
 router.post('/', (res, req) =>{
     res.send('Register a user');
