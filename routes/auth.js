@@ -1,20 +1,20 @@
 const express = require('express');
 const router = express.Router();
 
-// @routes GET api/auth
+// @route GET api/auth
 // @desc Get logged in user
 // @access Private
 
-router.get('/', (res, req) =>{
+router.get('/', (req, res) =>{
     res.send('Get logged in user');
 });
 
-// @routes GET api/auth
-// @desc Get logged in user
-// @access Private
+// @route POST api/auth
+// @desc Auth user & get token
+// @access Public
 
-router.get('/', (res, req) =>{
-    res.send('Get logged in user');
+router.post('/', (req, res) =>{
+    res.send('Log in user');
 });
 
 module.exports = router;
