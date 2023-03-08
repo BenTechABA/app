@@ -1,5 +1,4 @@
 node_modules/
-/main/build
 
 .DS_Store
 /main/.env.local
