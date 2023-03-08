@@ -3,12 +3,11 @@ const config = require('config');
 const db = config.get('mongoURI'); 
 
 const connectDB = async () => {
-
     try{
         await  mongoose.connect(
             db, {
                 useNewUrlParser:true
-                // useCreateIndex:true,
+                //useCreateIndex:true,
                 // useFindAndModify:false
             }
         );
@@ -18,4 +17,6 @@ const connectDB = async () => {
         process.exit(1);
     }
 }
+
+
 module.exports = connectDB;
